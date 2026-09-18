@@ -64,6 +64,8 @@ The complete Excel workbook containing the analysis is available in this reposit
 
 [`data_jobs_market_analysis.xlsx`](./data_jobs_market_analysis.xlsx)
 
+> **Note:** This workbook uses Power Query, Power Pivot, and Excel Data Model features. For full functionality, download the file and open it in the desktop version of Microsoft Excel. Some features may not be fully supported in Excel for the web.
+
 ## 👩‍💻 About This Project
 
 This project is part of my data analytics portfolio and demonstrates my ability to explore datasets, formulate analytical questions, identify patterns, and communicate findings using Microsoft Excel.
