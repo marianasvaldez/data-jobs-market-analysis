@@ -47,6 +47,35 @@ Skill demand was compared with median salary to explore which technical skills a
 
 The project also explores the relationship between the number of skills associated with data roles and their median salaries.
 
+## 📈 Key Insights
+
+### Salary by Role and Location
+
+Median salaries vary considerably across data-related roles. In the analyzed dataset, Data Analyst positions have a median salary of **$90,000**, while more specialized and senior roles show higher median compensation.
+
+The analysis also allows comparison between U.S. and non-U.S. salaries using an interactive country filter.
+
+![Salary analysis](./salary_analysis.png)
+
+### Skill Demand vs. Median Salary
+
+For Data Analyst positions in the United States, **SQL** is the most frequently requested skill among the top skills analyzed, with a **53% skill likelihood**.
+
+Other frequently requested skills include **Excel (41%)**, **Tableau (29%)**, **Python (28%)**, **SAS (19%)**, **Power BI (17%)**, and **R (16%)**.
+
+Among these skills, **Python** is associated with the highest median salary at approximately **$97,087**, followed by **Oracle ($96,924)** and **Tableau ($92,500)**.
+
+This comparison highlights that the most frequently requested skills are not necessarily associated with the highest median salaries.
+
+![Skills and salary analysis](./skill_salary_analysis.png)
+
+### Skills, Salary, and Job Count
+
+The analysis also compares average salary with the number of job postings associated with each skill.
+
+For the selected Data Analyst view, **SQL** has the highest job count among the top skills analyzed, while **Python** combines relatively high job availability with one of the highest average salaries.
+
+![Top skills by salary and job count](./top_skills_pay.png)
 ## 🛠 Tools & Techniques
 
 - Microsoft Excel
