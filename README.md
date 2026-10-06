@@ -2,101 +2,109 @@
 
 ## 📌 Overview
 
-This project analyzes the data job market using Microsoft Excel, with a focus on salaries, job roles, required skills, and geographic differences.
+This project analyzes the data job market using Microsoft Excel, with a focus on salaries, job roles, technical skills, job demand, and geographic differences.
 
-The goal of the project is to explore job market data and identify patterns that can help professionals better understand salary trends, skill demand, and the relationship between technical skills and compensation across data-related roles.
+The goal is to explore patterns in the data job market and understand how compensation and skill demand vary across different data-related roles and locations.
+
+The project includes interactive analyses using PivotTables, charts, and slicers.
 
 ## 🎯 Questions Explored
 
 The analysis investigates questions such as:
 
 - How do median salaries vary across data-related roles?
-- How do salaries compare between U.S. and non-U.S. positions?
-- Which skills are most frequently requested for Data Analyst roles?
+- How do U.S. and non-U.S. salaries compare?
+- Which technical skills are most frequently requested for different data roles?
 - Which skills are associated with higher median salaries?
-- Is there a relationship between the number of skills required and salary?
-- How do skill requirements differ across data-related roles?
+- How does skill demand compare with median salary?
+- Which skills combine high job demand with high average salaries?
+- How do these patterns change across job titles and countries?
 
 ## 🔎 Analysis
 
-### Salary by Job Role
+### Salary by Job Role and Location
 
-Median salaries were compared across different data-related positions to identify differences in compensation between roles.
+This analysis compares salaries across different data-related job titles using three measures:
 
-### Salary by Location
+- Median Salary
+- Median Salary US
+- Median Salary Non-US
 
-The project compares salary levels between U.S. and non-U.S. positions, providing a geographic perspective on compensation.
+An interactive **Country** slicer allows salary patterns to be explored across different locations.
 
-### Skills Demand
+In the United States view shown below, median salaries range from **$90,000 for Data Analyst and Business Analyst roles** to **$155,000 for Senior Data Scientist roles**.
 
-The analysis explores the frequency of technical skills requested for Data Analyst positions, including:
+![Salary analysis](salary_analysis.gif)
 
-- SQL
-- Excel
-- Python
-- Tableau
-- Power BI
-- R
-- SAS
+### What's the pay of the top 10 skills?
 
-### Skills and Salary
+This analysis explores the relationship between **Median Salary** and **Skill Likelihood** for the top skills associated with a selected job role.
 
-Skill demand was compared with median salary to explore which technical skills are associated with different compensation levels.
+The chart combines:
 
-### Number of Skills
+- Median Salary - Skills
+- Skill Likelihood
 
-The project also explores the relationship between the number of skills associated with data roles and their median salaries.
+Separate axes allow salary and skill demand to be compared within the same visualization.
+
+The analysis can be filtered interactively by **Job Title** and **Country**.
+
+For **Data Analyst positions in the United States**, SQL has the highest skill likelihood among the displayed skills at **53%**, followed by Excel at **41%**, Tableau at **29%**, and Python at **28%**.
+
+Among the displayed skills, Python has the highest median salary at approximately **$97,087**, followed by Oracle at **$96,924** and Tableau at **$92,500**.
+
+This comparison shows that the most frequently requested skills are not necessarily associated with the highest median salaries.
+
+![Skill salary analysis](skill_salary_analysis.gif)
+
+### What is the Salary of the Top 10 Skills of Data Nerds?
+
+This analysis compares **Job Count** and **Average Salary (USD)** for the top skills associated with a selected data role.
+
+An interactive **Job Title** slicer allows the analysis to be explored across different data-related positions.
+
+For the **Data Analyst** view shown in the project preview, SQL has the highest job count among the displayed skills with **5,033 jobs**, followed by Excel with **3,839** and Python with **2,765**.
+
+Python and Oracle have the highest average salaries among the displayed skills at approximately **$101,431** and **$100,647**, respectively.
+
+The visualization makes it possible to compare job-market demand with average compensation and identify skills that may offer different combinations of demand and salary.
+
+![Top skills pay analysis](top_skills_pay.gif)
 
 ## 📈 Key Insights
 
-### Salary by Role and Location
+- Median salaries vary considerably across data-related roles.
+- Specialized and senior data roles generally show higher median salaries in the salary analysis.
+- U.S. and non-U.S. salary levels can be compared across multiple job titles.
+- Skill demand and salary do not necessarily move together.
+- For U.S. Data Analyst positions, SQL has the highest skill likelihood among the displayed skills at **53%**, while Python has the highest median salary at approximately **$97,087**.
+- In the Data Analyst job-count analysis, SQL has the highest job count among the displayed skills, while Python and Oracle show the highest average salaries.
+- Interactive slicers allow the analyses to be explored across different job titles and locations.
 
-Median salaries vary considerably across data-related roles. In the analyzed dataset, Data Analyst positions have a median salary of **$90,000**, while more specialized and senior roles show higher median compensation.
-
-The analysis also allows comparison between U.S. and non-U.S. salaries using an interactive country filter.
-
-![Salary analysis](./salary_analysis.png)
-
-### Skill Demand vs. Median Salary
-
-For Data Analyst positions in the United States, **SQL** is the most frequently requested skill among the top skills analyzed, with a **53% skill likelihood**.
-
-Other frequently requested skills include **Excel (41%)**, **Tableau (29%)**, **Python (28%)**, **SAS (19%)**, **Power BI (17%)**, and **R (16%)**.
-
-Among these skills, **Python** is associated with the highest median salary at approximately **$97,087**, followed by **Oracle ($96,924)** and **Tableau ($92,500)**.
-
-This comparison highlights that the most frequently requested skills are not necessarily associated with the highest median salaries.
-
-![Skills and salary analysis](./skill_salary_analysis.png)
-
-### Skills, Salary, and Job Count
-
-The analysis also compares average salary with the number of job postings associated with each skill.
-
-For the selected Data Analyst view, **SQL** has the highest job count among the top skills analyzed, while **Python** combines relatively high job availability with one of the highest average salaries.
-
-![Top skills by salary and job count](./top_skills_pay.png)
 ## 🛠 Tools & Techniques
 
 - Microsoft Excel
 - Power Query
 - Power Pivot
 - PivotTables
-- Data Model
+- Excel Data Model
 - Data Cleaning
+- Data Transformation
+- Data Modeling
 - Data Analysis
 - Data Visualization
+- Interactive Slicers
 
 ## 📁 Project File
 
 The complete Excel workbook containing the analysis is available in this repository:
 
-[`data_jobs_market_analysis.xlsx`](./data_jobs_market_analysis.xlsx)
+[`data_jobs_market_analysis.xlsx`](data_jobs_market_analysis.xlsx)
 
-> **Note:** This workbook uses Power Query, Power Pivot, and Excel Data Model features. For full functionality, download the file and open it in the desktop version of Microsoft Excel. Some features may not be fully supported in Excel for the web.
+> **Note:** This workbook uses Power Query, Power Pivot, PivotTables, slicers, and Excel Data Model features. For full functionality, download the file and open it in the desktop version of Microsoft Excel. Some features may not be fully supported in Excel for the web.
 
 ## 👩‍💻 About This Project
 
-This project is part of my data analytics portfolio and demonstrates my ability to explore datasets, formulate analytical questions, identify patterns, and communicate findings using Microsoft Excel.
+This project is part of my data analytics portfolio and demonstrates my ability to clean and transform data, build data models, create interactive analyses, identify patterns, and communicate findings using Microsoft Excel.
 
 It also reflects my ongoing development in data analytics, building on my background in healthcare research, statistical analysis, and biostatistics.
